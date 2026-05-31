@@ -12,7 +12,7 @@ jobs:
 
     env:
       SolutionPath: 'MyApp.sln'                         # Cambia por el nombre de tu archivo .sln o .csproj
-      ProjectPath: 'TuProyecto/TuProyecto.csproj'            # Cambia por la ruta de tu proyecto WinUI principal
+      ProjectPath: 'src/MyApp.csproj'            # Cambia por la ruta de tu proyecto WinUI principal
       Configuration: 'Release'
       Platform: 'x64'                                        # WinUI requiere plataformas específicas (x64, x86 o arm64)
 
