@@ -1,6 +1,56 @@
+name: Build .NET 9 WinUI App
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
 jobs:
-- uses: actions/checkout@v6
-- uses: actions/setup-dotnet@v5
-  with:
-    dotnet-version: latest
-    dotnet-channel: LTS
+  build:
+    runs-on: windows-latest
+
+    env:
+      SolutionPath: 'MyApp.sln'                         # Cambia por el nombre de tu archivo .sln o .csproj
+      ProjectPath: 'TuProyecto/TuProyecto.csproj'            # Cambia por la ruta de tu proyecto WinUI principal
+      Configuration: 'Release'
+      Platform: 'x64'                                        # WinUI requiere plataformas específicas (x64, x86 o arm64)
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET 9
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Restore NuGet Packages
+      run: dotnet restore ${{ env.SolutionPath }}
+
+    # Paso requerido si tu app genera un paquete empaquetado (MSIX) para la Windows Store o Sideloading
+    - name: Decode Signing Certificate (Opcional)
+      run: |
+        echo "Si usas un certificado de firma (.pfx), puedes decodificarlo aquí usando Secrets de GitHub."
+        # Ejemplo: [System.Convert]::FromBase64String("${{ secrets.BASE64_PFX }}") | Set-Content -Path TuCertificado.pfx -AsByteStream
+
+    - name: Build and Package WinUI App
+      run: |
+        msbuild ${{ env.ProjectPath }} `
+          /p:Configuration=${{ env.Configuration }} `
+          /p:Platform=${{ env.Platform }} `
+          /p:UapAppxPackageBuildMode=SideloadOnly `
+          /p:AppxBundle=Never `
+          /p:PublishReadyToRun=true `
+          /p:AppxPackageSigningEnabled=false
+
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: WinUI-App-${{ env.Platform }}
+        path: |
+          **/AppPackages/**/*
+          **/bin/${{ env.Configuration }}/**/publish/
